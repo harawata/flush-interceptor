@@ -168,7 +168,9 @@
     </dependencies>
 
     <properties>
-        <batis.version>3.5.7KBworkaround-SNAPSHOT</batis.version>
+        <!--<batis.version>3.5.7KBworkaround-SNAPSHOT</batis.version>-->
+        <batis.version>9.0.0-SNAPSHOT</batis.version>
+
         <batis-spring.version>2.0.6</batis-spring.version>
         <batis-spring-boot.version>2.1.0</batis-spring-boot.version>
         <h2.version>1.4.200</h2.version>
