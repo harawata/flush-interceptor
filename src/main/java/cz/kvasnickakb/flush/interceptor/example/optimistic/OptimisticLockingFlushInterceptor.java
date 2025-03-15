@@ -1,7 +1,7 @@
 package cz.kvasnickakb.flush.interceptor.example.optimistic;
 
 import org.apache.ibatis.executor.BatchResult;
-import org.apache.ibatis.executor.flush.FlushResultHandler;
+//import org.apache.ibatis.executor.flush.FlushResultHandler;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.SqlCommandType;
 import org.apache.ibatis.plugin.*;
@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  * @inheritDoc
  * @since : 24.02.2021
  **/
-@Intercepts({@Signature(type = FlushResultHandler.class, method = "handleResults", args = {})})
+//@Intercepts({@Signature(type = FlushResultHandler.class, method = "handleResults", args = {})})
 public class OptimisticLockingFlushInterceptor implements Interceptor {
 
     @Override

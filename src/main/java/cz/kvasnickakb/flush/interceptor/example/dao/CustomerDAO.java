@@ -22,7 +22,7 @@ public interface CustomerDAO {
             "SET " +
             "Name = #{c.name}, " +
             "Version = Version + 1 " +
-            "WHERE Id = #{c.customerId} AND Version = #{c.version} "})
+            "WHERE Id = #{c.id} AND Version = #{c.version} "})
     void update(@Param("c") Customer customer);
 
     @Select("SELECT Id, Name, Version " +
@@ -35,4 +35,6 @@ public interface CustomerDAO {
     })
     Customer findById(@Param("id") Long id);
 
+    @Flush
+    void flush();
 }
